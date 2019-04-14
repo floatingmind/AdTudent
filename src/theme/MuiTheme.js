@@ -1,6 +1,8 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import purple from '@material-ui/core/colors/purple';
 
+import 'vazir-font/dist/font-face.css';
+
 export default createMuiTheme({
     direction: 'rtl',
     palette: {

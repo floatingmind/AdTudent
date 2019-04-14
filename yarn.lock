@@ -10698,6 +10698,11 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
+vazir-font@^19.2.0:
+  version "19.2.0"
+  resolved "https://registry.yarnpkg.com/vazir-font/-/vazir-font-19.2.0.tgz#33b11bf29664afebea1b208ef38160ad71f02fe3"
+  integrity sha512-Wyncyjb/3GicdsAslgrfMlzKVVYJQ8p+pxe3mDIfAbSGrnujov4NOfYxiyn8nxiKORrqT80fUHo0Ir+KyNzTPw==
+
 vendors@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.2.tgz#7fcb5eef9f5623b156bcea89ec37d63676f21801"
