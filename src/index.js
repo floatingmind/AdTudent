@@ -18,7 +18,7 @@ import GlobalStyle from "./theme/StyledTheme";
 // Redux Store
 import store from "./store/configureStore";
 
-import App from "./components/app";
+import AppRouter from './routers/AppRouter';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -28,7 +28,7 @@ ReactDOM.render(
         <ThemeProvider theme={{}}>
           <React.Fragment>
             <GlobalStyle />
-            <App />
+            <AppRouter />
           </React.Fragment>
         </ThemeProvider>
       </MuiThemeProvider>
