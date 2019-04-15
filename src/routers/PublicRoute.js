@@ -1,12 +1,19 @@
 import React from "react";
-import { Route, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const PublicRoute = ({ component: Component, ...rest }) => (
-  <React.Fragment>
-    <Header />
-    <Component {...rest} component={props => <Component {...props} />} />
-  </React.Fragment>
+  <Route
+    {...rest}
+    component={props => (
+      <React.Fragment>
+        <Header />
+        <Component {...props} />
+        <Footer />
+      </React.Fragment>
+    )}
+  />
 );
 
 export default PublicRoute;
