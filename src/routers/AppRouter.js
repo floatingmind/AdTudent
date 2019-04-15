@@ -19,14 +19,14 @@ import AdShow from "../components/Advertisement/AdShow";
 const AppRouter = () => (
     <Router history={history}>
       <Switch>
-        <PublicRoute path="/" exact component={Main} />
-        <PublicRoute path="/AboutUs" component={AboutUS} />
-        <PublicRoute path="/Search" component={Search} />
-        <PrivateRoute  path="/profile" component={Profile} />
-        <PrivateRoute  path="/advertisement/new" exact component={AdCreate} />
-        <PrivateRoute  path="/advertisement/edit/:id" exact component={AdEdit} />
-        <PrivateRoute  path="/advertisement/delete/:id" exact component={AdDelete} />
-        <PrivateRoute  path="/advertisement/:id" exact component={AdShow} />
+        <PublicRoute   exact path="/" component={Main} />
+        <PublicRoute   exact path="/aboutus" component={AboutUS} />
+        <PublicRoute   exact path="/search" component={Search} />
+        <PrivateRoute  exact path="/profile" component={Profile} />
+        <PrivateRoute  exact path="/advertisement/new" component={AdCreate} />
+        <PrivateRoute  exact path="/advertisement/edit/:id" component={AdEdit} />
+        <PrivateRoute  exact path="/advertisement/delete/:id" component={AdDelete} />
+        <PrivateRoute  exact path="/advertisement/:id" component={AdShow} />
       </Switch>
   </Router>
 );
