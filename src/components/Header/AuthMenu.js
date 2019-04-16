@@ -52,7 +52,7 @@ class AuthMenu extends Component {
           </StyledMenuItem>
           <GoogleAuth>
             {({ signOut }) => (
-              <StyledMenuItem onClick={signOut}>خروج اجباری</StyledMenuItem>
+              <StyledMenuItem onClick={signOut}>خروج</StyledMenuItem>
             )}
           </GoogleAuth>
         </Menu>

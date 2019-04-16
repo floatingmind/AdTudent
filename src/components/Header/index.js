@@ -11,7 +11,7 @@ class Header extends Component {
       <GoogleAuth>
         {({ isSignedIn, signIn, signOut }) => (
           <React.Fragment>
-            { isSignedIn ? (
+            {isSignedIn ? (
               <AuthMenu />
             ) : (
               <StyledButton onClick={signIn}>ورود / ثبت نام</StyledButton>
@@ -25,8 +25,14 @@ class Header extends Component {
   render() {
     return (
       <StyledAppBar>
-        <Grid container justify="space-between">
-          <Grid container item xs={3} justify="space-around">
+        <Grid container justify="space-between" alignItems="center">
+          <Grid
+            container
+            item
+            xs={3}
+            justify="space-around"
+            alignItems="center"
+          >
             <Grid item>
               <StyledLink exact to="/">
                 صفحه اصلی
