@@ -1,17 +1,37 @@
-import React from "react";
+import React, { Component } from "react";
 import { Redirect, Route } from "react-router-dom";
+import { connect } from "react-redux";
 
-const isAuthenticated = true;
+import PrivateDrawer from "../components/Drawer";
+import { Wrapper } from "../components/Share/Wrapper";
 
-const PrivateRoute = ({ component: Component, ...rest }) => {
-  return (
-    <Route
-      {...rest}
-      component={props =>
-        isAuthenticated ? <Component {...props} /> : <Redirect to="/" />
-      }
-    />
-  );
-};
+class PrivateRoute extends Component {
+  render() {
+    const { isSignedIn, component: Component, ...rest } = this.props;
 
-export default PrivateRoute;
+    return (
+      <Route
+        {...rest}
+        component={props =>
+          isSignedIn ? (
+            <Wrapper>
+              <PrivateDrawer />
+              <Component {...props} />
+            </Wrapper>
+          ) : (
+            <Redirect to="/" />
+          )
+        }
+      />
+    );
+  }
+}
+
+const mapStateToProps = state => ({
+  isSignedIn: state.auth.isSignedIn
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(PrivateRoute);
