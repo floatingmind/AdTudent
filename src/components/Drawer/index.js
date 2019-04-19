@@ -16,7 +16,6 @@ import { StyledLink } from "../Share/StyledLink";
 
 import { StyledDrawer } from "./styles";
 
-import { Link } from "react-router-dom";
 
 class PrivateDrawer extends Component {
   render() {

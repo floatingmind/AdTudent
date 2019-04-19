@@ -40,7 +40,7 @@ const Form = props => {
         <StyledCard>
           <CardContent>
             <Typography variant="h5" align="center" gutterBottom={true}>
-              { mode == "createAd" ? " ایجاد آگهی" : " ویرایش آگهی"}
+              { mode === "createAd" ? " ایجاد آگهی" : " ویرایش آگهی"}
             </Typography>
             <form onSubmit={handleSubmit}>
               <TextField

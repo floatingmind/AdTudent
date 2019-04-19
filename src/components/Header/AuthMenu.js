@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Menu from "@material-ui/core/Menu";
 import MoreVertIcon from "@material-ui/icons/MoreVertSharp";
-import { StyledMenuItem, StyledIconButton, StyledLink } from "./styles";
+import { StyledMenuItem, StyledIconButton, StyledMenuItemLink } from "./styles";
 import GoogleAuth from "../Share/GoogleAuth";
 
 class AuthMenu extends Component {
@@ -48,7 +48,7 @@ class AuthMenu extends Component {
           disableAutoFocusItem={true}
         >
           <StyledMenuItem onClick={this.handleClose}>
-            <StyledLink to="/profile">پروفایل</StyledLink>
+            <StyledMenuItemLink to="/profile">پروفایل</StyledMenuItemLink>
           </StyledMenuItem>
           <GoogleAuth>
             {({ signOut }) => (
