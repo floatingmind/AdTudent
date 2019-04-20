@@ -1,11 +1,6 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
-
 import styled from "styled-components";
-import AppBar from "@material-ui/core/AppBar";
-import Button from '@material-ui/core/Button';
-import MenuItem from "@material-ui/core/MenuItem";
-import IconButton from "@material-ui/core/IconButton";
+import { AppBar, Button, MenuItem, IconButton} from '@material-ui/core';
 
 
 export const StyledLink = styled(NavLink)`
@@ -68,4 +63,9 @@ export const StyledIconButton = styled(IconButton) `
 export const StyledMenuItem = styled(MenuItem) `
     font-family: "Vazir", sans-serif;
     font-size: 1.6rem;
+`;
+
+export const StyledMenuItemLink = styled(NavLink) `
+    text-decoration: none;
+    color: black;
 `;
