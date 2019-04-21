@@ -24,7 +24,7 @@ class Header extends Component {
 
   render() {
     return (
-      <StyledAppBar>
+      <StyledAppBar position="relative">
         <Grid container justify="space-between" alignItems="center">
           <Grid
             container
