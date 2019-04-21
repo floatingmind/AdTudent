@@ -13,7 +13,7 @@ class Search extends Component {
     return (
       <StyledTextField
         id="outlined-search"
-        label="جست و جو آگهی های من بر اساس آدرس"
+        label="جست و جو آگهی "
         type="search"
         InputProps={{
           startAdornment: (
@@ -22,7 +22,7 @@ class Search extends Component {
             </InputAdornment>
           )
         }}
-        margin="dense"
+        margin="normal"
         variant="outlined"
         autoComplete="off"
         value={this.props.filters.text}
