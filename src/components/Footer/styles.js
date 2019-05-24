@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Grid, NavLink } from '@material-ui/core';
+import { NavLink } from 'react-router-dom';
+import { Grid } from '@material-ui/core';
 
 export const Wrapper = styled.div`
   background: linear-gradient(45deg, #b74eff 30%, #4a74e2 90%);
