@@ -33,17 +33,12 @@ class Header extends Component {
             justify="space-around"
             alignItems="center"
           >
-            <Grid item>
+            <Grid item xs={3}>
               <StyledLink exact to="/">
                 صفحه اصلی
               </StyledLink>
             </Grid>
-            <Grid item>
-              <StyledLink exact to="/search">
-                جست و جو پیشرفته
-              </StyledLink>
-            </Grid>
-            <Grid item>
+            <Grid item xs={3}>
               <StyledLink exact to="/aboutus">
                 درباره ما
               </StyledLink>
