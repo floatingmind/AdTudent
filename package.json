@@ -26,7 +26,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "docgen": "react-docgen src/components/Header --pretty -o HeaderDOC_docgen.md",
+    "docgenerator": "react-doc-generator src/components/Header -o HeaderDOC_docgenerator.md"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +38,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-doc-generator": "^1.2.5",
+    "react-docgen": "^4.1.1"
+  }
 }
