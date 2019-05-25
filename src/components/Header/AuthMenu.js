@@ -4,19 +4,32 @@ import MoreVertIcon from "@material-ui/icons/MoreVertSharp";
 import { StyledMenuItem, StyledIconButton, StyledMenuItemLink } from "./styles";
 import GoogleAuth from "../Share/GoogleAuth";
 
+/**
+ * Render a component to show options for authenticated users
+ * @author mehran
+ */
 class AuthMenu extends Component {
   state = {
     anchorEl: null
   };
 
+  /**
+   * Open menu 
+   */
   handleClick = event => {
     this.setState({ anchorEl: event.currentTarget });
   };
 
+  /**
+   * Close menu 
+   */
   handleClose = () => {
     this.setState({ anchorEl: null });
   };
 
+  /**
+   * Sign out user from google authentication
+   */
   handleSignOut = () => {
     return (
       <GoogleAuth>

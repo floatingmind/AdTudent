@@ -5,7 +5,17 @@ import { StyledLink, StyledAppBar, StyledButton } from "./styles";
 import GoogleAuth from "../Share/GoogleAuth";
 import AuthMenu from "./AuthMenu";
 
+/**
+ * Render Header component of main page
+ * @author mehran
+ */
 class Header extends Component {
+
+  /**
+   * handle authentication status, 
+   * if user authenticated show Menu,
+   * else authentication button
+   */
   renderAuthButton() {
     return (
       <GoogleAuth>
