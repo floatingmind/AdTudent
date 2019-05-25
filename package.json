@@ -27,7 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "docgen": "react-docgen src/components/Header --pretty -o HeaderDOC_docgen.md",
+    "docgen": "react-docgen src/components/Header --pretty -o HeaderDOC_docgen.json",
     "docgenerator": "react-doc-generator src/components/Header -o HeaderDOC_docgenerator.md"
   },
   "eslintConfig": {
